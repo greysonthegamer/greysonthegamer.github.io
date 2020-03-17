@@ -8,5 +8,7 @@ Checkout my [youtube channel](https://www.youtube.com/channel/UC834hsJEf0h6trX93
 
 ### This is a learning project
 
-I'm going to learn HTML, CSS, and JS by working through the [http://www.freecodecamp.org] curriculum
-You can follow along with me at [learning.html]
+I'm going to learn HTML, CSS, and JS by working through the [https://www.freecodecamp.org](http://www.freecodecamp.org) curriculum.
+
+
+You can follow along with me at [learning.html](https://greysonthegamer.github.io/index.html).

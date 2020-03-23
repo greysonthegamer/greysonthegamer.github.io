@@ -1,4 +1,4 @@
-[home](https://greysonthegamer.github.io/)          [Videos]
+[home](https://greysonthegamer.github.io/)          [youtube channel](https://www.youtube.com/channel/UC834hsJEf0h6trX93Za5UTA/featured?flow=grid)
 
 
 

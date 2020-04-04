@@ -8,3 +8,131 @@
       </iframe>
 </body>
 </html>
+var dancer1;
+
+whenSetup(function () {
+  setBackgroundEffectWithPalette("lasers", "electronic");
+  makeNewDanceSprite("DOG", 'dancer1', {x: 200, y: 200});
+  makeNewDanceSpriteGroup(9, "SHARK", "circle");
+  alternateMoves("DOG", 2, MOVES.Clown, MOVES.Thriller);
+  changeMoveEachLR("SHARK", MOVES.Drop, -1);
+  setForegroundEffectExtended("raining_tacos");
+  makeNewDanceSpriteGroup(12, "ROBOT", "border");
+  changeMoveEachLR("ROBOT", MOVES.Floss, 1);
+});
+
+atTimestamp(4, "measures", function () {
+  setBackgroundEffectWithPalette("kaleidoscope", "cool");
+  alternateMoves("DOG", 2, MOVES.DoubleJam, MOVES.Fresh);
+  changeMoveEachLR("SHARK", MOVES.Dab, -1);
+  changeMoveEachLR("ROBOT", MOVES.ClapHigh, 1);
+  setForegroundEffectExtended("smiling_poop");
+  layoutSprites("SHARK", "top");
+  layoutSprites("ROBOT", "bottom");
+  makeNewDanceSpriteGroup(8, "DUCK", "left");
+  makeNewDanceSpriteGroup(8, "ALIEN", "right");
+  changeMoveEachLR("ALIEN", MOVES.Roll, -1);
+  changeMoveEachLR("DUCK", MOVES.ThisOrThat, 1);
+  makeNewDanceSpriteGroup(4, "MOOSE", "circle");
+  changeMoveEachLR("MOOSE", MOVES.Drop, -1);
+});
+
+atTimestamp(46, "measures", function () {
+  setBackgroundEffectWithPalette("ripples_random", "electronic");
+  setForegroundEffectExtended("emojis");
+  changeMoveEachLR("ROBOT", MOVES.Dab, 1);
+  changeMoveEachLR("SHARK", MOVES.Clown, -1);
+  changeMoveEachLR("DOG", MOVES.ClapHigh, 1);
+});
+
+atTimestamp(51, "measures", function () {
+  setBackground('#000000');
+  setForegroundEffectExtended("none");
+  setVisibleEach("SHARK", false);
+  setVisibleEach("ROBOT", false);
+  setProp('dancer1', "scale", 175);
+  changeMoveLR('dancer1', MOVES.Kick, 1);
+});
+
+atTimestamp(16, "measures", function () {
+  setBackgroundEffectWithPalette("disco_ball", "cool");
+  setForegroundEffectExtended("exploding_stars");
+  alternateMoves("DOG", 2, MOVES.ClapHigh, MOVES.Clown);
+  layoutSprites("ROBOT", "border");
+  layoutSprites("SHARK", "inner");
+  changeMoveEachLR("ROBOT", MOVES.Roll, 1);
+  changeMoveEachLR("SHARK", MOVES.Kick, -1);
+});
+
+atTimestamp(30, "measures", function () {
+  setVisibleEach("ROBOT", true);
+  setVisibleEach("SHARK", true);
+  layoutSprites("SHARK", "border");
+  layoutSprites("ROBOT", "circle");
+  setBackgroundEffectWithPalette("splatter", "iceCream");
+  setForegroundEffectExtended("pineapples");
+  setProp('dancer1', "scale", 125);
+  changePropEachBy("DOG", "y", -5);
+});
+
+atTimestamp(8, "measures", function () {
+  setBackgroundEffectWithPalette("swirl", "electronic");
+  layoutSprites(sprites, "grid");
+  setForegroundEffectExtended("confetti");
+  changeMoveEachLR(sprites, MOVES.Dab, -1);
+  setDanceSpeedEach(sprites, 2);
+});
+
+atTimestamp(12, "measures", function () {
+  setBackgroundEffectWithPalette("quads", "neon");
+  setForegroundEffectExtended("color_lights");
+  setVisibleEach("MOOSE", false);
+  setVisibleEach("DUCK", false);
+  setVisibleEach("ALIEN", false);
+  jumpToEach("DOG", {x: 200, y: 200});
+  layoutSprites("ROBOT", "top");
+  layoutSprites("SHARK", "bottom");
+  changeMoveEachLR("DOG", MOVES.Floss, 1);
+  changeMoveEachLR("ROBOT", MOVES.Thriller, -1);
+  changeMoveEachLR("SHARK", MOVES.ThisOrThat, 1);
+  setPropEach("DOG", "scale", 100);
+  setPropEach("SHARK", "scale", 55);
+  setPropEach("ROBOT", "scale", 55);
+  setDanceSpeedEach(sprites, 1);
+});
+
+atTimestamp(35, "measures", function () {
+  setBackgroundEffectWithPalette("fireworks", "default");
+  setForegroundEffectExtended("music_notes");
+  changeMoveEachLR("SHARK", MOVES.Roll, -1);
+  changeMoveEachLR("ROBOT", MOVES.Drop, -1);
+  alternateMoves("DOG", 2, MOVES.ThisOrThat, MOVES.Clown);
+});
+
+atTimestamp(41, "measures", function () {
+  setBackgroundEffectWithPalette("flowers", "vintage");
+  setForegroundEffectExtended("smile_face");
+  alternateMoves("ROBOT", 2, MOVES.DoubleJam, MOVES.Floss);
+  alternateMoves("SHARK", 2, MOVES.ThisOrThat, MOVES.Thriller);
+  changeMoveEachLR("DOG", MOVES.Dab, 1);
+});
+
+atTimestamp(21, "measures", function () {
+  setBackgroundEffectWithPalette("ripples", "electronic");
+  setForegroundEffectExtended("pizzas");
+  changeMoveEachLR("SHARK", MOVES.Roll, 1);
+  changeMoveEachLR("DOG", MOVES.ThisOrThat, -1);
+  changeMoveEachLR("ROBOT", MOVES.Floss, 1);
+});
+
+atTimestamp(26, "measures", function () {
+  setBackground('#000000');
+  setForegroundEffectExtended("none");
+  changeMoveEachLR("ROBOT", MOVES.Clown, 1);
+  changeMoveEachLR("SHARK", MOVES.Fresh, -1);
+  alternateMoves("DOG", 2, MOVES.Thriller, MOVES.Fresh);
+  setVisibleEach("ROBOT", false);
+  setVisibleEach("SHARK", false);
+  setProp('dancer1', "scale", 175);
+  changePropBy('dancer1', "y", 40);
+});
